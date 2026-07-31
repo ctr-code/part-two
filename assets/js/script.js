@@ -1,7 +1,7 @@
 let count = 0;
 
 // BUG 1: The ID doesn't match the HTML element! Fix "counter-display-num"
-const display = document.getElementById("counter-display-num");
+const display = document.getElementById("count");
 const incrementBtn = document.getElementById("increment-btn");
 const decrementBtn = document.getElementById("decrement-btn");
 const resetBtn = document.getElementById("reset-btn");
@@ -10,7 +10,7 @@ const resetBtn = document.getElementById("reset-btn");
 incrementBtn.addEventListener("click", () => {
   count++;
   // BUG 2: Updates .value instead of text content... why?
-  display.value = count;
+  display.textContent = count;
 });
 
 
