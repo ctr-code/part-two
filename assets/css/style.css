@@ -56,12 +56,21 @@ body {
 }
 
 .btn-primary {
-  background-color: var(--primary-color);
-  color: white;
+  background-color: lightgreen;
+  color: black;
 }
 
 .btn-primary:hover {
-  background-color: var(--primary-hover);
+  background-color: green;
+  color: white;
 }
 
-/* CSS TASK: Style .btn-secondary and .btn-outline buttons! */
+.btn-secondary {
+    background-color: pink;
+    color: black;
+}
+
+.btn-secondary:hover {
+    background-color: red;
+    color: white;
+}
